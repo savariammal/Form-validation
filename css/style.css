@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body{
+   /* background: linear-gradient(to right, #c73e82, #3b74aa,#58b39f,#6da5ee,#6da5ee,#c04444);*/
+    background: #d865c9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: rgb(216,214,214);
+    box-shadow: rgb(0,0,0) 0px 5px 15px;
+    width: 400px;
+}
+
+.header{
+    color: #fff;
+    text-align: center;
+    background-color: #2a0845;
+    padding: 20px 40px;
+    border-bottom: 2px solid #494848;
+}
+
+.form{
+    padding: 25px 40px;
+}
+
+.from-group{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.from-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.from-group input{
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 4px;
+    font-size: .8rem;
+    width: 100%;
+    padding: 10px;
+}
+
+.from-group input:focus{
+    outline: none;
+}
+
+.from-group::placeholder{
+    color: #2a0845;
+}
+
+.from-group i{
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    visibility: hidden;
+}
+
+.from-group span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-style: italic;
+    visibility: hidden;
+}
+
+.from-group.success input{
+    border-color: #2ecc71;
+}
+
+.from-group.error input{
+    border-color: #e74c3c;
+}
+
+.from-group.success i.ion-ios-checkmark{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.from-group.error i.ion-android-alert{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.from-group.error span{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.from-group.success span{
+    /* color: #2ecc71; */
+    visibility: hidden;
+}
+
+.form #submit{
+    background-color: #2a0845;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.form #submit:hover{
+    background-color: #6441a5;
+}
+
+@media only screen and (max-width : 500px){
+    .form{
+        width: 100%;
+    }
+
+    .from-group span{
+        font-size: xx-small;
+    }
+}
