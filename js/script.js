@@ -156,7 +156,7 @@ class FormValidation{
 
           
         }else{
-            swal("Give Valid Inputs")
+            swal("Give Valid Inputs");
         }
     }
 
