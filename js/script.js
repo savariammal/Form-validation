@@ -85,7 +85,7 @@ class FormValidation{
         const phnumber = /^\d{10}$/
 
         if(this.formValues.phonenumber === ""){
-            this.errorValues.phonenumberErr = "* Please Enter Valid Phone Number"
+            this.errorValues.phonenumberErr = "* Please Enter Valid Number"
 
             this.showErrorMsg(2,this.errorValues.phonenumberErr)
 
@@ -156,7 +156,7 @@ class FormValidation{
 
           
         }else{
-            swal("Give Valid Inputs", "Click ok to Continue", "error")
+            swal("Give Valid Inputs","error")
         }
     }
 
